@@ -3,3 +3,9 @@
     background-size: cover;
     background-position: center;
 }
+
+body {
+    font-family: Arial, sans-serif;
+    margin: 20px;
+}
+

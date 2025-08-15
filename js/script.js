@@ -27,3 +27,4 @@ function sendMessage() {
         alert("Please enter a message before sending.");
     }
 }
+
