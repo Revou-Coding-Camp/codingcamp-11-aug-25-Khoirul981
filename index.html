@@ -1,11 +1,111 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Portofolio Saya</title>
+
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body>
-    
+
+<body class="font-sans text-gray-800">
+
+    <!-- Header -->
+    <header class="fixed top-0 left-0 w-full bg-white shadow-md z-50">
+        <div class="container mx-auto flex items-center justify-between p-4">
+            <!-- Logo -->
+            <div class="bg-gradient-to-r from-blue-500 to-purple-500 rounded-full h-12 w-12 flex items-center justify-center text-white font-bold text-lg">
+                Y
+            </div>
+
+            <!-- Navigation -->
+            <nav>
+                <ul class="flex gap-4">
+                    <li><a href="#home" class="px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white transition">Home</a></li>
+                    <li><a href="#profile" class="px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white transition">Our Profile</a></li>
+                    <li><a href="#portfolio" class="px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white transition">Portfolio</a></li>
+                    <li><a href="#contact" class="px-4 py-2 rounded-md hover:bg-blue-500 hover:text-white transition">Message Us</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+     <main>
+        <!-- Home -->
+         <section id="home" class="h-screen bg-cover bg-center flex items-center justify-center text-center"
+        style="background-image: url('https://images.unsplash.com/photo-1503264116251-35a269479413?auto=format&fit=crop&w=1500&q=80');">
+        <div class="bg-black bg-opacity-50 p-8 rounded-lg">
+            <h1 class="text-5xl font-bold text-white mb-4">Selamat datang <span id="user-greeting"></span> ke Portofolio saya</h1>
+            <p class="text-lg text-gray-200">Temukan karya-karya terbaik saya di sini</p>
+        </div>
+    </section>
+
+    <!-- Our Profile -->
+    <section id="profile" class="py-20 bg-gray-100">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-6">Profil Kami</h2>
+            <p class="text-gray-600 max-w-2xl mx-auto">Kami adalah tim kreatif yang berdedikasi untuk menghadirkan
+                karya berkualitas tinggi. Kami percaya setiap proyek adalah kesempatan untuk menciptakan sesuatu yang
+                istimewa.</p>
+        </div>
+    </section>
+
+    <!-- Portfolio -->
+    <section id="portfolio" class="py-20">
+        <div class="container mx-auto text-center">
+            <h2 class="text-4xl font-bold mb-10">Portfolio</h2>
+            <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+                    <img src="https://via.placeholder.com/400x250" alt="Project" class="w-full">
+                    <div class="p-4">
+                        <h3 class="font-bold">Project 1</h3>
+                        <p class="text-gray-500">Deskripsi singkat project</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+                    <img src="https://via.placeholder.com/400x250" alt="Project" class="w-full">
+                    <div class="p-4">
+                        <h3 class="font-bold">Project 2</h3>
+                        <p class="text-gray-500">Deskripsi singkat project</p>
+                    </div>
+                </div>
+                <div class="bg-white shadow-md rounded-lg overflow-hidden hover:scale-105 transition">
+                    <img src="https://via.placeholder.com/400x250" alt="Project" class="w-full">
+                    <div class="p-4">
+                        <h3 class="font-bold">Project 3</h3>
+                        <p class="text-gray-500">Deskripsi singkat project</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="py-20 bg-gray-100">
+        <div class="container mx-auto max-w-lg">
+            <h2 class="text-4xl font-bold text-center mb-6">Message Us</h2>
+            <form class="bg-white shadow-lg rounded-lg p-6">
+                <label for="name" class="block mb-2 font-semibold">Name</label>
+                <input id="name" type="text" class="border border-gray-300 rounded-md w-full p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500">
+
+                <label for="message" class="block mb-2 font-semibold">Message</label>
+                <textarea id="message" rows="4" class="border border-gray-300 rounded-md w-full p-3 mb-4 focus:outline-none focus:ring-2 focus:ring-blue-500"></textarea>
+
+                <button type="submit" class="bg-blue-500 text-white px-4 py-2 rounded-md hover:bg-blue-600 transition w-full">Send</button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-4 text-center">
+        &copy; 2025 Portfolio Syarif. All rights reserved.
+    </footer>
+
+     <script src="js/script.js"></script>
+
 </body>
+
 </html>
